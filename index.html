@@ -3,7 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Mirror Content — Personal AI Writing Studio</title>
+  <title>Mirror Content</title>
+
+  <!-- iOS Safari & Home Screen Web App Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Mirror Content" />
+  <meta name="application-name" content="Mirror Content" />
+  <meta name="theme-color" content="#F6A6D7" />
+
+  <!-- Static apple-touch-icon.png in same repo folder (100% reliable on iOS Safari) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="apple-touch-icon" href="https://imglink.cc/cdn/CGAnocEpw5.jpeg" />
+  <link id="favicon-link" rel="icon" type="image/png" href="apple-touch-icon.png" />
 
   <!-- Google Fonts: Fredoka (bubbly whimsical headings), Mali (cute handwritten diary accent), Quicksand (soft rounded body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -227,7 +240,6 @@
        ======================================================================== -->
   <svg aria-hidden="true" class="hidden" width="0" height="0">
     <defs>
-      <!-- Gradient definitions for SVGs -->
       <linearGradient id="grad-pink-purple" x1="0%" y1="0%" x2="100%" y2="100%">
         <stop offset="0%" stop-color="#F6A6D7" />
         <stop offset="50%" stop-color="#C6A8F5" />
@@ -238,29 +250,24 @@
         <stop offset="100%" stop-color="#E9DDFB" />
       </linearGradient>
 
-      <!-- Four-point Sparkle -->
       <symbol id="svg-sparkle" viewBox="0 0 24 24">
         <path d="M12 2C12.4 7.4 16.6 11.6 22 12C16.6 12.4 12.4 16.6 12 22C11.6 16.6 7.4 12.4 2 12C7.4 11.6 11.6 7.4 12 2Z" fill="currentColor" />
       </symbol>
 
-      <!-- Cute Ribbon Bow -->
       <symbol id="svg-bow" viewBox="0 0 32 24">
         <path d="M16 12C12 6 4 4 3 10C2 15 9 17 16 13C23 17 30 15 29 10C28 4 20 6 16 12Z" fill="#F6A6D7" stroke="#7652B8" stroke-width="1.6" stroke-linejoin="round"/>
         <path d="M14 13L9 21M18 13L23 21" stroke="#7652B8" stroke-width="1.8" stroke-linecap="round"/>
         <circle cx="16" cy="12.5" r="2.8" fill="#FFF0F7" stroke="#7652B8" stroke-width="1.6"/>
       </symbol>
 
-      <!-- Heart -->
       <symbol id="svg-heart" viewBox="0 0 24 24">
         <path d="M12 20.5C12 20.5 3.5 15 3.5 8.8C3.5 6 5.7 3.8 8.4 3.8C10.1 3.8 11.4 4.6 12 5.8C12.6 4.6 13.9 3.8 15.6 3.8C18.3 3.8 20.5 6 20.5 8.8C20.5 15 12 20.5 12 20.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
       </symbol>
 
-      <!-- Crescent Moon -->
       <symbol id="svg-moon" viewBox="0 0 24 24">
         <path d="M20.2 14.8A8.5 8.5 0 0 1 9.2 3.8a8.5 8.5 0 1 0 11 11Z" fill="currentColor" opacity="0.25" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
       </symbol>
 
-      <!-- Cute Flower -->
       <symbol id="svg-flower" viewBox="0 0 24 24">
         <circle cx="12" cy="6.5" r="3" fill="#FFD5DF" stroke="#7652B8" stroke-width="1.4"/>
         <circle cx="17.2" cy="10.3" r="3" fill="#E9DDFB" stroke="#7652B8" stroke-width="1.4"/>
@@ -270,7 +277,6 @@
         <circle cx="12" cy="12" r="2.6" fill="#F58BC6" stroke="#7652B8" stroke-width="1.4"/>
       </symbol>
 
-      <!-- Nav Icons -->
       <symbol id="nav-home" viewBox="0 0 24 24">
         <path d="M4 10.5L12 4L20 10.5V19C20 19.8 19.3 20.5 18.5 20.5H14.5V15C14.5 14.2 13.8 13.5 13 13.5H11C10.2 13.5 9.5 14.2 9.5 15V20.5H5.5C4.7 20.5 4 19.8 4 19V10.5Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
         <circle cx="12" cy="9.5" r="1.3" fill="currentColor"/>
@@ -299,7 +305,6 @@
         <path d="M12 3.5V5.5M12 18.5V20.5M3.5 12H5.5M18.5 12H20.5M6 6L7.4 7.4M16.6 16.6L18 18M18 6L16.6 7.4M7.4 16.6L6 18" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
       </symbol>
 
-      <!-- Social Media Platform Custom Inline SVGs -->
       <symbol id="soc-threads" viewBox="0 0 24 24">
         <path d="M16.2 11.4C15.9 8.7 14.3 7.2 11.9 7.2C9.4 7.2 7.8 8.9 7.8 11.8C7.8 14.8 9.5 16.6 12.1 16.6C14.1 16.6 15.5 15.6 16 14M16.2 11.4C16.3 12.5 15.7 13.4 14.6 13.4C13.6 13.4 13 12.7 13 11.7C13 10.7 13.7 10 14.7 10C15.6 10 16.1 10.6 16.2 11.4ZM19.5 12C19.5 16.4 16.2 19.8 12 19.8C7.6 19.8 4.5 16.4 4.5 12C4.5 7.6 7.6 4.2 12 4.2C16.3 4.2 19.5 7.4 19.5 11.8V13.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
       </symbol>
@@ -337,40 +342,33 @@
   </svg>
 
   <!-- ========================================================================
-       AMBIENT WHIMSICAL BACKGROUND DECORATIONS (CLOUDS & TWINKLING STARS)
+       AMBIENT WHIMSICAL BACKGROUND DECORATIONS
        ======================================================================== -->
   <div aria-hidden="true" class="fixed inset-0 pointer-events-none overflow-hidden z-0">
-    <!-- Top Left Puffy Cloud -->
     <svg class="absolute -top-6 -left-10 w-56 h-32 text-white/70 animate-float" viewBox="0 0 200 100" fill="currentColor">
       <path d="M35 82H162C177 82 188 71 188 57C188 44 178 34 165 33C161 17 146 6 129 6C116 6 104 13 98 24C92 20 85 18 77 18C59 18 45 31 43 48C28 50 17 61 17 74C17 79 25 82 35 82Z" />
     </svg>
-    <!-- Top Right Twinkling Stars -->
     <svg class="absolute top-14 right-8 w-6 h-6 text-candyPink/60 animate-twinkle" viewBox="0 0 24 24">
       <use href="#svg-sparkle" />
     </svg>
     <svg class="absolute top-28 right-20 w-4 h-4 text-softPurple/60 animate-twinkle-delay" viewBox="0 0 24 24">
       <use href="#svg-sparkle" />
     </svg>
-    <!-- Bottom Left Star -->
     <svg class="absolute bottom-32 left-6 w-5 h-5 text-dreamyPink/70 animate-twinkle-delay" viewBox="0 0 24 24">
       <use href="#svg-sparkle" />
     </svg>
-    <!-- Bottom Right Puffy Cloud -->
     <svg class="absolute bottom-16 -right-12 w-64 h-36 text-lilacMist/60" viewBox="0 0 200 100" fill="currentColor">
       <path d="M35 82H162C177 82 188 71 188 57C188 44 178 34 165 33C161 17 146 6 129 6C116 6 104 13 98 24C92 20 85 18 77 18C59 18 45 31 43 48C28 50 17 61 17 74C17 79 25 82 35 82Z" />
     </svg>
   </div>
 
   <!-- ========================================================================
-       STICKY TOP BRAND HEADER (WHIMSICAL DIARY MASTHEAD)
+       STICKY TOP BRAND HEADER
        ======================================================================== -->
   <header class="sticky top-0 z-30 bg-pearlWhite/80 backdrop-blur-md border-b border-lavender/35">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
-      <!-- Brand Identity + Active Owner Avatar Badge -->
       <button type="button" onclick="App.navigate('home')" class="flex items-center gap-3 text-left group focus:outline-none">
-        <div id="header-avatar-slot" class="relative w-10 h-10 rounded-2xl bg-gradient-to-br from-dreamyPink via-lavender to-deepGrape p-[2px] shadow-sm group-hover:scale-105 transition-transform flex items-center justify-center overflow-hidden">
-          <!-- Rendered dynamically with chosen avatar -->
-        </div>
+        <div id="header-avatar-slot" class="relative w-10 h-10 rounded-2xl bg-gradient-to-br from-dreamyPink via-lavender to-deepGrape p-[2px] shadow-sm group-hover:scale-105 transition-transform flex items-center justify-center overflow-hidden"></div>
         <div>
           <div class="flex items-center gap-1.5">
             <span class="font-display font-bold text-lg sm:text-xl tracking-tight text-deepGrape">Mirror Content</span>
@@ -380,7 +378,6 @@
         </div>
       </button>
 
-      <!-- Right Status Pill & Quick Dump Shortcut -->
       <div class="flex items-center gap-2 sm:gap-3">
         <span id="header-ai-badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blushCream text-deepGrape border border-dreamyPink/60">
           <span class="w-2 h-2 rounded-full bg-candyPink animate-pulse"></span>
@@ -405,17 +402,12 @@
          SECTION 1: HOME DASHBOARD
          ====================================================================== -->
     <section id="view-home" class="page-section space-y-6">
-      <!-- Welcome Hero Card -->
       <div class="diary-card p-6 sm:p-8 relative overflow-hidden bg-gradient-to-br from-pearlWhite via-blushCream to-lilacMist/70">
-        <!-- Decorative Corner Bow & Stars -->
         <svg class="w-12 h-9 absolute top-4 right-5 opacity-90" viewBox="0 0 32 24"><use href="#svg-bow"/></svg>
         <svg class="w-5 h-5 text-candyPink/70 absolute bottom-5 right-10 animate-twinkle" viewBox="0 0 24 24"><use href="#svg-sparkle"/></svg>
 
         <div class="flex flex-col sm:flex-row sm:items-center gap-5">
-          <!-- Owner Avatar -->
-          <div onclick="App.navigate('settings')" title="Tap to change avatar" id="home-avatar-container" class="cursor-pointer w-16 h-16 sm:w-20 sm:h-20 rounded-3xl bg-gradient-to-br from-dreamyPink to-lavender p-1 shadow-diary shrink-0 flex items-center justify-center hover:scale-105 transition-transform">
-            <!-- Rendered via JS -->
-          </div>
+          <div onclick="App.navigate('settings')" title="Tap to change avatar" id="home-avatar-container" class="cursor-pointer w-16 h-16 sm:w-20 sm:h-20 rounded-3xl bg-gradient-to-br from-dreamyPink to-lavender p-1 shadow-diary shrink-0 flex items-center justify-center hover:scale-105 transition-transform"></div>
 
           <div class="space-y-1.5 flex-1">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pearlWhite/90 border border-dreamyPink/50 text-xs font-semibold text-deepGrape">
@@ -440,7 +432,6 @@
           </div>
         </div>
 
-        <!-- Quick Action Pills -->
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-6 pt-5 border-t border-lavender/35">
           <button type="button" onclick="App.startNewIdea()" class="btn-magic p-3.5 text-left flex items-center gap-3">
             <span class="w-9 h-9 rounded-xl bg-white/20 flex items-center justify-center shrink-0">
@@ -468,7 +459,7 @@
             </span>
             <div>
               <div class="text-xs sm:text-sm font-bold leading-tight">Saved Content</div>
-              <div class="text-[11px] text-deepGrape/70 font-normal">Library & drafts</div>
+              <div class="text-[11px] text-deepGrape/70 font-normal">Library &amp; drafts</div>
             </div>
           </button>
 
@@ -486,7 +477,6 @@
         </div>
       </div>
 
-      <!-- Creative Overview (Real Stored Counts) -->
       <div>
         <div class="flex items-center justify-between mb-3 px-1">
           <h2 class="font-display font-bold text-lg text-deepGrape flex items-center gap-2">
@@ -520,9 +510,7 @@
         </div>
       </div>
 
-      <!-- Daily Creative Inspiration + Recent Activity Split -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
-        <!-- Daily Inspiration Card -->
         <div class="lg:col-span-5 diary-card p-5 sm:p-6 bg-gradient-to-b from-blushCream/90 to-pearlWhite flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
@@ -547,7 +535,6 @@
           </div>
         </div>
 
-        <!-- Recent Diary Activity Card -->
         <div class="lg:col-span-7 diary-card p-5 sm:p-6 flex flex-col justify-between space-y-4">
           <div class="flex items-center justify-between">
             <h2 class="font-display font-bold text-lg text-deepGrape flex items-center gap-2">
@@ -558,13 +545,10 @@
               View All →
             </button>
           </div>
-          <div id="home-recent-activity" class="space-y-2.5 flex-1">
-            <!-- Rendered dynamically -->
-          </div>
+          <div id="home-recent-activity" class="space-y-2.5 flex-1"></div>
         </div>
       </div>
 
-      <!-- Quick Platform Jump Strip on Home -->
       <div class="diary-card p-4 sm:p-5 bg-gradient-to-r from-pearlWhite via-blushCream/60 to-lilacMist/50">
         <div class="flex items-center justify-between mb-3">
           <span class="font-display font-semibold text-sm sm:text-base text-deepGrape flex items-center gap-2">
@@ -606,7 +590,6 @@
          SECTION 2: IDEA DUMP & AI MIRROR ANALYSIS
          ====================================================================== -->
     <section id="view-ideas" class="page-section hidden space-y-6">
-      <!-- Page Header -->
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <div class="inline-flex items-center gap-1.5 text-xs font-bold text-candyPink uppercase tracking-wider">
@@ -625,9 +608,7 @@
         </div>
       </div>
 
-      <!-- Distraction-Free Diary Writing Pad -->
       <div class="diary-card p-5 sm:p-7 relative">
-        <!-- Decorative Top Bow -->
         <div class="flex items-center justify-between gap-3 mb-4 pb-3 border-b border-lavender/30">
           <div class="flex items-center gap-2.5 flex-1">
             <svg class="w-8 h-6 shrink-0" viewBox="0 0 32 24"><use href="#svg-bow"/></svg>
@@ -641,7 +622,6 @@
           <span id="idea-char-count" class="text-xs font-medium text-deepGrape/55 shrink-0">0 chars</span>
         </div>
 
-        <!-- Main Multiline Brain-Dump Textarea -->
         <textarea
           id="idea-raw-input"
           rows="8"
@@ -649,7 +629,6 @@
           class="w-full diary-lined-paper rounded-2xl p-4 sm:pl-12 font-hand text-sm sm:text-base text-deepGrape placeholder:text-deepGrape/45 border border-lavender/40 resize-y focus:border-softPurple transition"
         ></textarea>
 
-        <!-- Cute Diary Mood Stickers -->
         <div class="mt-3 flex flex-wrap items-center gap-2">
           <span class="text-xs font-bold text-deepGrape/70 mr-1">Diary Vibe Stamp:</span>
           <button type="button" data-mood="Late Night Thoughts" onclick="App.toggleIdeaMood('Late Night Thoughts')" class="mood-chip px-3 py-1 rounded-full bg-pearlWhite border border-lavender/60 text-xs font-semibold text-deepGrape/80 hover:border-candyPink transition">Late Night</button>
@@ -659,7 +638,6 @@
           <button type="button" data-mood="Need Rest" onclick="App.toggleIdeaMood('Need Rest')" class="mood-chip px-3 py-1 rounded-full bg-pearlWhite border border-lavender/60 text-xs font-semibold text-deepGrape/80 hover:border-candyPink transition">Need Rest</button>
         </div>
 
-        <!-- Optional Context / Notes & Tags -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
           <div>
             <label for="idea-notes-input" class="block text-xs font-semibold text-deepGrape/75 mb-1">Optional Context / Notes</label>
@@ -681,7 +659,6 @@
           </div>
         </div>
 
-        <!-- Primary Action Bar -->
         <div class="flex flex-wrap items-center justify-between gap-3 mt-5 pt-4 border-t border-lavender/30">
           <div class="flex flex-wrap items-center gap-2">
             <button type="button" onclick="App.saveCurrentIdea(false)" class="btn-pastel px-4 py-2.5 text-xs sm:text-sm inline-flex items-center gap-2">
@@ -704,9 +681,7 @@
         </div>
       </div>
 
-      <!-- ====================================================================
-           AI MIRROR ANALYSIS PANEL (SECTIONS A TO G)
-           ==================================================================== -->
+      <!-- AI MIRROR ANALYSIS PANEL (SECTIONS A TO G) -->
       <div id="mirror-analysis-panel" class="hidden diary-card p-5 sm:p-7 border-2 border-dreamyPink/70 bg-gradient-to-br from-pearlWhite via-blushCream/70 to-lilacMist/60 space-y-5">
         <div class="flex flex-wrap items-start justify-between gap-3 pb-4 border-b border-lavender/40">
           <div>
@@ -721,7 +696,6 @@
           </button>
         </div>
 
-        <!-- Loading State -->
         <div id="analysis-loading" class="hidden py-10 text-center space-y-3">
           <svg class="w-10 h-10 mx-auto text-candyPink animate-spin" viewBox="0 0 24 24" fill="none">
             <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2.5" stroke-dasharray="42 18"/>
@@ -730,41 +704,34 @@
           <p class="text-xs text-deepGrape/70">Identifying unspoken audience thoughts &amp; relatable angles in your natural Manglish voice.</p>
         </div>
 
-        <!-- Structured Analysis Grid (Sections A - G) -->
         <div id="analysis-results-body" class="space-y-4">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- A. Core Message -->
             <div class="p-4 rounded-2xl bg-pearlWhite/95 border border-lavender/45">
               <div class="text-xs font-bold uppercase tracking-wider text-softPurple mb-1">A. Core Message</div>
               <p id="analysis-core-message" class="text-sm text-deepGrape leading-relaxed"></p>
             </div>
 
-            <!-- B. Hidden Emotion -->
             <div class="p-4 rounded-2xl bg-pearlWhite/95 border border-dreamyPink/55">
               <div class="text-xs font-bold uppercase tracking-wider text-candyPink mb-1">B. Hidden Emotion</div>
               <p id="analysis-hidden-emotion" class="text-sm text-deepGrape leading-relaxed"></p>
             </div>
 
-            <!-- C. Audience Connection -->
             <div class="p-4 rounded-2xl bg-pearlWhite/95 border border-lavender/45">
               <div class="text-xs font-bold uppercase tracking-wider text-softPurple mb-1">C. Audience Connection</div>
               <p id="analysis-audience-connection" class="text-sm text-deepGrape leading-relaxed"></p>
             </div>
 
-            <!-- D. Unspoken Thoughts -->
             <div class="p-4 rounded-2xl bg-pearlWhite/95 border border-dreamyPink/55">
               <div class="text-xs font-bold uppercase tracking-wider text-candyPink mb-1">D. Unspoken Thoughts</div>
               <p id="analysis-unspoken-thoughts" class="text-sm text-deepGrape italic leading-relaxed"></p>
             </div>
           </div>
 
-          <!-- E. Relatable Situations -->
           <div class="p-4 rounded-2xl bg-pearlWhite/95 border border-lavender/45">
             <div class="text-xs font-bold uppercase tracking-wider text-softPurple mb-2">E. Relatable Everyday Situations</div>
             <ul id="analysis-relatable-situations" class="space-y-1.5 text-sm text-deepGrape"></ul>
           </div>
 
-          <!-- G. Content Potential Recommendation -->
           <div class="p-4 rounded-2xl bg-gradient-to-r from-softPeach/50 to-lilacMist/70 border border-candyPink/45">
             <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-deepGrape mb-1">
               <svg class="w-4 h-4 text-candyPink" viewBox="0 0 24 24"><use href="#svg-sparkle"/></svg>
@@ -773,18 +740,14 @@
             <p id="analysis-content-potential" class="text-sm font-medium text-deepGrape leading-relaxed"></p>
           </div>
 
-          <!-- F. Mirror Angles (Interactive Selection) -->
           <div class="space-y-2.5 pt-2">
             <div class="flex items-center justify-between">
               <span class="text-xs font-bold uppercase tracking-wider text-deepGrape">F. Choose a Mirror Angle to Write</span>
               <span class="text-xs text-deepGrape/65">Tap one angle below</span>
             </div>
-            <div id="analysis-angles-list" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <!-- Angle cards rendered dynamically -->
-            </div>
+            <div id="analysis-angles-list" class="grid grid-cols-1 sm:grid-cols-2 gap-3"></div>
           </div>
 
-          <!-- Continue to Create Studio Button -->
           <div class="pt-3 flex flex-wrap items-center justify-end gap-3">
             <button type="button" onclick="App.proceedWithSelectedAngle()" class="btn-magic px-6 py-3 text-sm inline-flex items-center gap-2">
               <span>Generate Mirror Content with Selected Angle</span>
@@ -796,9 +759,7 @@
         </div>
       </div>
 
-      <!-- ====================================================================
-           SAVED IDEAS VAULT
-           ==================================================================== -->
+      <!-- SAVED IDEAS VAULT -->
       <div class="space-y-4 pt-2">
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <h2 class="font-display font-bold text-xl text-deepGrape flex items-center gap-2">
@@ -822,9 +783,7 @@
           </div>
         </div>
 
-        <div id="saved-ideas-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <!-- Saved idea cards rendered here -->
-        </div>
+        <div id="saved-ideas-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
       </div>
     </section>
 
@@ -832,7 +791,6 @@
          SECTION 3: MIRROR CONTENT GENERATOR & CAROUSEL BUILDER
          ====================================================================== -->
     <section id="view-create" class="page-section hidden space-y-6">
-      <!-- Studio Header -->
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <div class="inline-flex items-center gap-1.5 font-hand text-xs font-bold text-candyPink">
@@ -848,9 +806,7 @@
         </span>
       </div>
 
-      <!-- Studio Input & Configuration Card -->
       <div class="diary-card p-5 sm:p-7 space-y-5">
-        <!-- Source Selector Tabs -->
         <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-end">
           <div class="sm:col-span-6">
             <label for="create-source-select" class="block text-xs font-bold text-deepGrape/80 mb-1.5">Start From Saved Idea / Analysis</label>
@@ -870,7 +826,6 @@
           </div>
         </div>
 
-        <!-- Topic / Raw Thought Input -->
         <div>
           <div class="flex items-center justify-between mb-1.5">
             <label for="create-prompt-input" class="text-xs font-bold text-deepGrape/80">Your Raw Thought, Topic or Observation</label>
@@ -884,7 +839,6 @@
           ></textarea>
         </div>
 
-        <!-- Interactive Social Media Platform & Format Studio Picker -->
         <div class="space-y-3 p-4 rounded-2xl bg-blushCream/55 border border-dreamyPink/50">
           <div class="flex flex-wrap items-center justify-between gap-2">
             <label class="text-xs font-bold text-deepGrape flex items-center gap-1.5">
@@ -896,19 +850,11 @@
             </span>
           </div>
 
-          <!-- Platform Filter Pills -->
-          <div id="platform-filter-pills" class="flex items-center gap-1.5 overflow-x-auto pb-1">
-            <!-- Rendered dynamically -->
-          </div>
-
-          <!-- Interactive Format Cards Grid -->
-          <div id="format-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 max-h-60 overflow-y-auto pr-1">
-            <!-- Rendered dynamically -->
-          </div>
+          <div id="platform-filter-pills" class="flex items-center gap-1.5 overflow-x-auto pb-1"></div>
+          <div id="format-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 max-h-60 overflow-y-auto pr-1"></div>
           <input type="hidden" id="create-format-select" value="Threads Single Relatable Thought" />
         </div>
 
-        <!-- Length, Tone & Carousel Slides Controls -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
           <div>
             <label for="create-length-select" class="block text-xs font-bold text-deepGrape/80 mb-1">Content Length</label>
@@ -933,7 +879,6 @@
             </select>
           </div>
 
-          <!-- Carousel / Thread Slide Count (Visible when Multi-Slide / Carousel selected) -->
           <div id="carousel-count-wrapper" class="hidden">
             <label for="create-slides-select" class="block text-xs font-bold text-candyPink mb-1">Number of Slides / Cards</label>
             <select id="create-slides-select" class="w-full px-3 py-2.5 rounded-xl bg-blushCream border border-dreamyPink text-xs sm:text-sm text-deepGrape font-bold">
@@ -944,7 +889,6 @@
           </div>
         </div>
 
-        <!-- Generation Action Buttons -->
         <div class="flex flex-wrap items-center justify-between gap-3 pt-2">
           <button type="button" onclick="App.generateThreeAngles()" class="btn-pastel px-4 py-2.5 text-xs sm:text-sm inline-flex items-center gap-2">
             <svg class="w-4 h-4 text-softPurple" viewBox="0 0 24 24"><use href="#svg-flower"/></svg>
@@ -958,18 +902,14 @@
         </div>
       </div>
 
-      <!-- 3 Content Approaches Explorer (Optional Step) -->
       <div id="three-angles-container" class="hidden diary-card p-5 sm:p-6 bg-gradient-to-r from-blushCream/80 to-lilacMist/70 space-y-3">
         <div class="flex items-center justify-between">
           <h3 class="font-display font-bold text-base sm:text-lg text-deepGrape">Pick an Approach to Expand</h3>
           <button type="button" onclick="document.getElementById('three-angles-container').classList.add('hidden')" class="text-xs font-semibold text-deepGrape/65 hover:text-deepGrape">Hide</button>
         </div>
-        <div id="three-angles-grid" class="grid grid-cols-1 md:grid-cols-3 gap-3.5">
-          <!-- 3 approach cards rendered here -->
-        </div>
+        <div id="three-angles-grid" class="grid grid-cols-1 md:grid-cols-3 gap-3.5"></div>
       </div>
 
-      <!-- Studio Loading Overlay Card -->
       <div id="create-loading-card" class="hidden diary-card p-8 text-center space-y-3">
         <svg class="w-10 h-10 mx-auto text-softPurple animate-spin" viewBox="0 0 24 24" fill="none">
           <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2.5" stroke-dasharray="42 18"/>
@@ -978,11 +918,7 @@
         <p class="text-xs text-deepGrape/70">Balancing warmth, honesty, and relatable everyday rhythm.</p>
       </div>
 
-      <!-- ====================================================================
-           GENERATED OUTPUT STUDIO (STANDARD POST OR CAROUSEL BUILDER)
-           ==================================================================== -->
       <div id="create-output-wrapper" class="hidden space-y-5">
-        <!-- Output Title & Meta Bar -->
         <div class="diary-card p-5 sm:p-7 space-y-5">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-lavender/35">
             <div class="flex-1">
@@ -1005,20 +941,15 @@
             </div>
           </div>
 
-          <!-- Standard Post View (Hidden when Carousel mode is active) -->
           <div id="standard-post-editor" class="space-y-4">
-            <!-- Mirror Structure Map Pills -->
             <div class="p-3.5 rounded-2xl bg-blushCream/65 border border-dreamyPink/40">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-[11px] font-bold uppercase tracking-wider text-deepGrape/75">Mirror Structure Blueprint</span>
                 <button type="button" onclick="App.toggleStructureDetails()" id="btn-toggle-blueprint" class="text-xs font-semibold text-candyPink hover:underline">Show 5 Beats</button>
               </div>
-              <div id="structure-beats-grid" class="hidden grid-cols-1 sm:grid-cols-5 gap-2 text-xs mt-2">
-                <!-- Populated with Opening, Mirror Moment, Deeper Connection, Main Message, Closing -->
-              </div>
+              <div id="structure-beats-grid" class="hidden grid-cols-1 sm:grid-cols-5 gap-2 text-xs mt-2"></div>
             </div>
 
-            <!-- Main Editable Generated Copy -->
             <div>
               <textarea
                 id="output-body-textarea"
@@ -1028,7 +959,6 @@
               ></textarea>
             </div>
 
-            <!-- Cute Interactive Social Media Live Mockup Preview -->
             <div class="pt-2">
               <div class="flex items-center justify-between mb-2">
                 <span class="text-xs font-bold text-deepGrape/75 flex items-center gap-1.5">
@@ -1039,13 +969,10 @@
                   Show Feed Preview
                 </button>
               </div>
-              <div id="live-socmed-preview-box" class="hidden p-4 sm:p-5 rounded-3xl bg-white border-2 border-lavender/50 shadow-sm max-w-lg mx-auto space-y-3">
-                <!-- Populated dynamically -->
-              </div>
+              <div id="live-socmed-preview-box" class="hidden p-4 sm:p-5 rounded-3xl bg-white border-2 border-lavender/50 shadow-sm max-w-lg mx-auto space-y-3"></div>
             </div>
           </div>
 
-          <!-- Carousel Builder View (Shown when Carousel Content is selected) -->
           <div id="carousel-builder-editor" class="hidden space-y-4">
             <div class="flex flex-wrap items-center justify-between gap-2 bg-lilacMist/50 p-3.5 rounded-2xl border border-lavender/50">
               <div class="text-xs font-semibold text-deepGrape">
@@ -1061,12 +988,9 @@
               </div>
             </div>
 
-            <div id="carousel-slides-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <!-- Individual editable slide cards rendered dynamically -->
-            </div>
+            <div id="carousel-slides-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
           </div>
 
-          <!-- Regeneration & Fine-Tuning Controls -->
           <div class="pt-3 border-t border-lavender/35 space-y-2.5">
             <div class="text-xs font-bold uppercase tracking-wider text-deepGrape/70">Refine &amp; Regenerate (Keeps Your Meaning Intact)</div>
             <div class="flex flex-wrap gap-2">
@@ -1084,7 +1008,6 @@
             </div>
           </div>
 
-          <!-- Save to Library Actions -->
           <div class="pt-4 border-t border-lavender/35 flex flex-wrap items-center justify-between gap-3">
             <span id="editing-content-indicator" class="text-xs font-medium text-deepGrape/65">New creation (unsaved)</span>
             <div class="flex flex-wrap items-center gap-2.5">
@@ -1118,7 +1041,6 @@
         </button>
       </div>
 
-      <!-- Category Filter Pills -->
       <div class="flex items-center gap-2 overflow-x-auto pb-1">
         <button type="button" data-lib-tab="all" onclick="App.setLibraryTab('all')" class="lib-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition shrink-0">All Content</button>
         <button type="button" data-lib-tab="draft" onclick="App.setLibraryTab('draft')" class="lib-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition shrink-0">Drafts</button>
@@ -1127,7 +1049,6 @@
         <button type="button" data-lib-tab="archived" onclick="App.setLibraryTab('archived')" class="lib-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition shrink-0">Archived</button>
       </div>
 
-      <!-- Search, Format Filter, Date Filter & Sort Bar -->
       <div class="diary-card p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
         <input
           id="library-search-input"
@@ -1162,10 +1083,7 @@
         </select>
       </div>
 
-      <!-- Content Cards Grid -->
-      <div id="library-content-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <!-- Rendered dynamically -->
-      </div>
+      <div id="library-content-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
     </section>
 
     <!-- ======================================================================
@@ -1180,16 +1098,56 @@
         <h1 class="font-display font-bold text-2xl sm:text-3xl text-deepGrape">Studio Settings</h1>
       </div>
 
-      <!-- 1. Owner Profile -->
+      <!-- 1. Home Screen App Icon Setup -->
+      <div class="diary-card p-5 sm:p-6 bg-gradient-to-br from-pearlWhite via-blushCream/70 to-lilacMist/60 space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <h2 class="font-display font-bold text-lg text-deepGrape flex items-center gap-2">
+            <svg class="w-5 h-5 text-candyPink" viewBox="0 0 24 24"><use href="#svg-sparkle"/></svg>
+            <span>Home Screen App Icon (iPhone &amp; Android)</span>
+          </h2>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blushCream border border-dreamyPink text-deepGrape text-xs font-bold">
+            <span>apple-touch-icon.png</span>
+          </span>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4">
+          <div class="shrink-0 flex flex-col items-center gap-1.5">
+            <div class="w-20 h-20 rounded-[22px] overflow-hidden shadow-diary border-2 border-pearlWhite bg-blushCream">
+              <img id="settings-homescreen-icon-preview" alt="Mirror Content Home Screen Icon" class="w-full h-full object-cover" />
+            </div>
+            <span class="text-[11px] font-display font-semibold text-deepGrape">Mirror Content</span>
+          </div>
+
+          <div class="flex-1 space-y-2 text-xs sm:text-sm text-deepGrape/80">
+            <p class="font-bold text-deepGrape">Kenapa iPhone tunjuk huruf "M" kelabu tadi?</p>
+            <p class="text-xs leading-relaxed">
+              iPhone Safari hanya baca fail gambar betul bernama <code>apple-touch-icon.png</code> yang duduk sekali dalam folder GitHub you (dia block link luar macam <code>imglink.cc</code> dan ignore base64).
+            </p>
+            <div class="p-3 rounded-2xl bg-pearlWhite/90 border border-lavender/50 text-xs space-y-1">
+              <div><strong>Step 1:</strong> Tekan butang <strong>Download apple-touch-icon.png</strong> kat bawah ni (simpan ke Photos / Files).</div>
+              <div><strong>Step 2:</strong> Upload fail <code>apple-touch-icon.png</code> tu ke dalam folder repo GitHub <code>mirrorcontent</code> you (sebelah <code>index.html</code>).</div>
+              <div><strong>Step 3:</strong> Buka Safari → <strong>Share → Add to Home Screen</strong> — terus keluar icon cermin pink-purple!</div>
+            </div>
+            <div class="pt-1 flex flex-wrap items-center gap-2">
+              <button type="button" onclick="App.downloadHomeScreenIconPng()" class="btn-magic px-4 py-2 text-xs inline-flex items-center gap-1.5">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span>Download apple-touch-icon.png</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Owner Profile -->
       <div class="diary-card p-5 sm:p-6 space-y-4">
         <div class="flex flex-wrap items-center justify-between gap-2">
           <h2 class="font-display font-bold text-lg text-deepGrape flex items-center gap-2">
             <svg class="w-5 h-5 text-candyPink" viewBox="0 0 24 24"><use href="#svg-heart"/></svg>
             <span>Owner Profile</span>
           </h2>
-          <div id="settings-active-avatar-badge" class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blushCream border border-dreamyPink/60 text-xs font-bold text-deepGrape">
-            <!-- Rendered dynamically -->
-          </div>
+          <div id="settings-active-avatar-badge" class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blushCream border border-dreamyPink/60 text-xs font-bold text-deepGrape"></div>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -1203,16 +1161,13 @@
           </div>
         </div>
 
-        <!-- SVG Avatar Picker -->
         <div>
           <label class="block text-xs font-bold text-deepGrape/80 mb-2">Choose Diary Avatar (Tap to switch immediately)</label>
-          <div id="settings-avatar-picker" class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            <!-- Rendered via JS -->
-          </div>
+          <div id="settings-avatar-picker" class="grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
         </div>
       </div>
 
-      <!-- 2. Locked Manglish Writing Personality & Preferences -->
+      <!-- 3. Locked Manglish Writing Personality & Preferences -->
       <div class="diary-card p-5 sm:p-6 space-y-4">
         <div class="flex flex-wrap items-center justify-between gap-2">
           <h2 class="font-display font-bold text-lg text-deepGrape flex items-center gap-2">
@@ -1274,7 +1229,7 @@
         </div>
       </div>
 
-      <!-- 3. Built-in Manglish AI Engine Status (No setup required!) -->
+      <!-- 4. Built-in Manglish AI Engine Status -->
       <div class="diary-card p-5 sm:p-6 space-y-3">
         <div class="flex flex-wrap items-center justify-between gap-2">
           <h2 class="font-display font-bold text-lg text-deepGrape">Manglish AI Engine</h2>
@@ -1311,7 +1266,7 @@
         </details>
       </div>
 
-      <!-- 4. Data Management & Backup -->
+      <!-- 5. Data Management & Backup -->
       <div class="diary-card p-5 sm:p-6 space-y-4">
         <h2 class="font-display font-bold text-lg text-deepGrape">Diary Data &amp; Backups (localStorage)</h2>
         <div class="flex flex-wrap gap-2.5">
@@ -1382,7 +1337,7 @@
   </nav>
 
   <!-- ========================================================================
-       CUSTOM MODAL DIALOG (NO alert() OR confirm() USED ANYWHERE)
+       CUSTOM MODAL DIALOG
        ======================================================================== -->
   <div id="custom-modal-backdrop" class="hidden fixed inset-0 z-50 bg-deepGrape/35 backdrop-blur-xs flex items-center justify-center p-4">
     <div class="diary-card bg-pearlWhite max-w-md w-full p-6 space-y-4 shadow-2xl border-2 border-dreamyPink/70">
@@ -1396,9 +1351,7 @@
       <div id="modal-input-wrapper" class="hidden">
         <input id="modal-text-input" type="text" class="w-full px-3.5 py-2.5 rounded-xl bg-blushCream/60 border border-lavender text-sm text-deepGrape font-medium" />
       </div>
-      <div id="modal-actions" class="flex flex-wrap items-center justify-end gap-2 pt-2">
-        <!-- Buttons injected dynamically -->
-      </div>
+      <div id="modal-actions" class="flex flex-wrap items-center justify-end gap-2 pt-2"></div>
     </div>
   </div>
 
@@ -1407,14 +1360,217 @@
        ======================================================================== -->
   <div id="toast-container" class="fixed top-20 right-4 z-50 flex flex-col gap-2 pointer-events-none max-w-xs sm:max-w-sm"></div>
 
-  <!-- ========================================================================
-       APPLICATION JAVASCRIPT ARCHITECTURE
-       1. Constants, Avatars & Locked Manglish Voice
-       2. StorageService (localStorage Phase 1, Firestore-ready schema)
-       3. AIService (Modular Manglish Engine + Remote Endpoint Ready)
-       4. UI & App Controller
-       ======================================================================== -->
   <script>
+    /**
+     * 0. 512x512 PNG HOME SCREEN ICON GENERATOR (For apple-touch-icon.png download & favicon)
+     */
+    const IconGenerator = {
+      cachedDataUrl: null,
+
+      generate512PngDataUrl() {
+        if (this.cachedDataUrl) return this.cachedDataUrl;
+        const size = 512;
+        const canvas = document.createElement('canvas');
+        canvas.width = size;
+        canvas.height = size;
+        const ctx = canvas.getContext('2d');
+
+        // Full-bleed dreamy pink & lavender diagonal gradient
+        const bgGrad = ctx.createLinearGradient(0, 0, size, size);
+        bgGrad.addColorStop(0, '#E3B8FA');
+        bgGrad.addColorStop(0.45, '#F6A6D7');
+        bgGrad.addColorStop(0.8, '#F58BC6');
+        bgGrad.addColorStop(1, '#9872DF');
+        ctx.fillStyle = bgGrad;
+        ctx.fillRect(0, 0, size, size);
+
+        const glow = ctx.createRadialGradient(256, 240, 20, 256, 240, 240);
+        glow.addColorStop(0, 'rgba(255, 250, 255, 0.55)');
+        glow.addColorStop(1, 'rgba(255, 250, 255, 0)');
+        ctx.fillStyle = glow;
+        ctx.fillRect(0, 0, size, size);
+
+        const drawCloud = (cx, cy, scale) => {
+          ctx.save();
+          ctx.translate(cx, cy);
+          ctx.scale(scale, scale);
+          ctx.shadowColor = 'rgba(118, 82, 184, 0.22)';
+          ctx.shadowBlur = 18;
+          ctx.shadowOffsetY = 8;
+          const cGrad = ctx.createLinearGradient(0, -40, 0, 40);
+          cGrad.addColorStop(0, '#FFFFFF');
+          cGrad.addColorStop(1, '#EADDFB');
+          ctx.fillStyle = cGrad;
+          ctx.beginPath();
+          ctx.arc(-42, 8, 28, 0, Math.PI * 2);
+          ctx.arc(-12, -10, 36, 0, Math.PI * 2);
+          ctx.arc(24, -4, 32, 0, Math.PI * 2);
+          ctx.arc(52, 12, 24, 0, Math.PI * 2);
+          ctx.roundRect(-56, 6, 122, 30, 15);
+          ctx.fill();
+          ctx.restore();
+        };
+
+        const drawSparkle = (x, y, r, color = '#FFFFFF') => {
+          ctx.save();
+          ctx.translate(x, y);
+          ctx.fillStyle = color;
+          ctx.shadowColor = 'rgba(255,255,255,0.8)';
+          ctx.shadowBlur = 8;
+          ctx.beginPath();
+          ctx.moveTo(0, -r);
+          ctx.quadraticCurveTo(0, 0, r, 0);
+          ctx.quadraticCurveTo(0, 0, 0, r);
+          ctx.quadraticCurveTo(0, 0, -r, 0);
+          ctx.quadraticCurveTo(0, 0, 0, -r);
+          ctx.closePath();
+          ctx.fill();
+          ctx.restore();
+        };
+
+        drawCloud(385, 165, 0.85);
+        drawCloud(125, 325, 0.92);
+
+        // Crescent Moon
+        ctx.save();
+        ctx.translate(142, 126);
+        ctx.rotate(-0.25);
+        ctx.shadowColor = 'rgba(118, 82, 184, 0.25)';
+        ctx.shadowBlur = 14;
+        ctx.fillStyle = '#FFF7FD';
+        ctx.beginPath();
+        ctx.arc(0, 0, 32, 0.35 * Math.PI, 1.65 * Math.PI);
+        ctx.arc(14, -6, 26, 1.55 * Math.PI, 0.45 * Math.PI, true);
+        ctx.closePath();
+        ctx.fill();
+        ctx.restore();
+
+        drawSparkle(190, 96, 16);
+        drawSparkle(365, 105, 14);
+        drawSparkle(102, 225, 18);
+        drawSparkle(415, 290, 20);
+        drawSparkle(145, 412, 14);
+
+        // Tilted Handheld Vanity Mirror
+        ctx.save();
+        ctx.translate(258, 255);
+        ctx.rotate(-0.16);
+
+        ctx.save();
+        ctx.shadowColor = 'rgba(118, 82, 184, 0.30)';
+        ctx.shadowBlur = 20;
+        ctx.shadowOffsetY = 10;
+        const handleGrad = ctx.createLinearGradient(-22, 80, 22, 195);
+        handleGrad.addColorStop(0, '#D4B6FA');
+        handleGrad.addColorStop(1, '#9A78DF');
+        ctx.fillStyle = handleGrad;
+        ctx.beginPath();
+        ctx.roundRect(-20, 75, 40, 122, 20);
+        ctx.fill();
+        ctx.restore();
+
+        ctx.save();
+        ctx.shadowColor = 'rgba(118, 82, 184, 0.32)';
+        ctx.shadowBlur = 24;
+        ctx.shadowOffsetY = 12;
+        const frameGrad = ctx.createLinearGradient(-105, -145, 105, 105);
+        frameGrad.addColorStop(0, '#D9BCFC');
+        frameGrad.addColorStop(0.5, '#F6A6D7');
+        frameGrad.addColorStop(1, '#A98AE8');
+        ctx.fillStyle = frameGrad;
+
+        for (let i = 0; i < 16; i++) {
+          const angle = (i / 16) * Math.PI * 2;
+          const bx = Math.cos(angle) * 102;
+          const by = Math.sin(angle) * 126 - 18;
+          ctx.beginPath();
+          ctx.arc(bx, by, 16, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        ctx.beginPath();
+        ctx.arc(0, -152, 20, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.ellipse(0, -18, 104, 128, 0, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+
+        ctx.fillStyle = '#FFD1E8';
+        ctx.beginPath();
+        ctx.ellipse(0, -18, 88, 112, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        const glassGrad = ctx.createLinearGradient(-75, -115, 75, 85);
+        glassGrad.addColorStop(0, '#EFE4FF');
+        glassGrad.addColorStop(0.5, '#E3CCF9');
+        glassGrad.addColorStop(1, '#F9C4E4');
+        ctx.fillStyle = glassGrad;
+        ctx.beginPath();
+        ctx.ellipse(0, -18, 78, 102, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.55)';
+        ctx.beginPath();
+        ctx.ellipse(-26, -52, 24, 52, -0.35, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Candy-Pink Ribbon Bow
+        ctx.save();
+        ctx.translate(0, 96);
+        ctx.rotate(0.12);
+        ctx.shadowColor = 'rgba(118, 82, 184, 0.32)';
+        ctx.shadowBlur = 14;
+        ctx.shadowOffsetY = 6;
+
+        const bowGrad = ctx.createLinearGradient(-70, -30, 70, 45);
+        bowGrad.addColorStop(0, '#FFAAD8');
+        bowGrad.addColorStop(0.55, '#F58BC6');
+        bowGrad.addColorStop(1, '#DC68AC');
+        ctx.fillStyle = bowGrad;
+
+        ctx.beginPath();
+        ctx.moveTo(-10, 6);
+        ctx.lineTo(-52, 62);
+        ctx.lineTo(-24, 56);
+        ctx.lineTo(-4, 14);
+        ctx.closePath();
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(10, 6);
+        ctx.lineTo(52, 62);
+        ctx.lineTo(24, 56);
+        ctx.lineTo(4, 14);
+        ctx.closePath();
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(-6, 0);
+        ctx.bezierCurveTo(-55, -42, -82, 12, -10, 14);
+        ctx.closePath();
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(6, 0);
+        ctx.bezierCurveTo(55, -42, 82, 12, 10, 14);
+        ctx.closePath();
+        ctx.fill();
+
+        ctx.fillStyle = '#FF9CD2';
+        ctx.beginPath();
+        ctx.roundRect(-14, -12, 28, 28, 10);
+        ctx.fill();
+        ctx.restore();
+
+        ctx.restore();
+        drawCloud(365, 365, 0.88);
+
+        this.cachedDataUrl = canvas.toDataURL('image/png');
+        return this.cachedDataUrl;
+      }
+    };
+
     /**
      * 1. LOCKED WRITING PERSONALITY, AVATARS & CURATED DIARY CONSTANTS
      */
@@ -1504,41 +1660,28 @@ Restrictions: Zero profanity, vulgar expressions, or carutan. Never fabricate pe
     ];
 
     const SOCMED_FORMATS = [
-      // THREADS
       { id: 'Threads Single Relatable Thought', platform: 'Threads', icon: '#soc-threads', title: 'Threads Single Thought', desc: 'Punchy, raw, conversational thought that sparks instant replies.', isSlideDeck: false },
       { id: 'Threads Multi-Post Chain', platform: 'Threads', icon: '#soc-threads', title: 'Threads Story Chain', desc: 'Connected 4–5 part thread unfolding a deeper honest realization.', isSlideDeck: false },
       { id: 'Threads Conversation Question', platform: 'Threads', icon: '#soc-threads', title: 'Threads Open Question', desc: 'Relatable confession + warm question that invites korang to share.', isSlideDeck: false },
-
-      // TIKTOK
       { id: 'TikTok Hook & Caption', platform: 'TikTok', icon: '#soc-tiktok', title: 'TikTok Hook + Caption', desc: 'Scroll-stopping on-screen text hook + relatable Manglish caption.', isSlideDeck: false },
       { id: 'TikTok Talking-Head Script', platform: 'TikTok', icon: '#soc-tiktok', title: 'TikTok Talking-Head Script', desc: 'Natural spoken script with pacing cues (Hook → Story → Mirror).', isSlideDeck: false },
       { id: 'TikTok Photo Swipe Deck', platform: 'TikTok', icon: '#soc-tiktok', title: 'TikTok Photo Mode Swipe', desc: 'Aesthetic multi-slide text cards for TikTok photo swipe posts.', isSlideDeck: true },
-
-      // LEMON8
       { id: 'Lemon8 Aesthetic Diary Post', platform: 'Lemon8', icon: '#soc-lemon8', title: 'Lemon8 Diary & Sharing', desc: 'Catchy Lemon8 headline, cozy story paragraphs & key takeaways.', isSlideDeck: false },
       { id: 'Lemon8 Carousel Guide', platform: 'Lemon8', icon: '#soc-lemon8', title: 'Lemon8 Carousel Cards', desc: 'Structured visual slide copy with cover title & bite-sized tips.', isSlideDeck: true },
       { id: 'Lemon8 Honest Review / POV', platform: 'Lemon8', icon: '#soc-lemon8', title: 'Lemon8 Honest POV', desc: 'Heartfelt personal review or life lesson in friendly Manglish.', isSlideDeck: false },
-
-      // INSTAGRAM
       { id: 'Instagram caption', platform: 'Instagram', icon: '#soc-instagram', title: 'IG Relatable Caption', desc: 'Warm, emotional mirror caption with clean line breaks.', isSlideDeck: false },
       { id: 'Instagram Reels Hook & Caption', platform: 'Instagram', icon: '#soc-instagram', title: 'IG Reels Cover + Caption', desc: 'Short cover text + storytelling caption for aesthetic Reels.', isSlideDeck: false },
       { id: 'Carousel content', platform: 'Instagram', icon: '#soc-instagram', title: 'IG Carousel Slide Deck', desc: '5, 7, or 10 editable slide cards built for high saves.', isSlideDeck: true },
-
-      // FACEBOOK
       { id: 'Facebook post', platform: 'Facebook', icon: '#soc-facebook', title: 'FB Long Storytelling', desc: 'Deep, heartfelt sharing post that gets shared on timelines.', isSlideDeck: false },
       { id: 'Facebook Short Status', platform: 'Facebook', icon: '#soc-facebook', title: 'FB Relatable Status', desc: 'Short, punchy status update that hits right in the feels.', isSlideDeck: false },
-
-      // X & CHANNEL
       { id: 'X (Twitter) Punchy Post', platform: 'X & Channel', icon: '#soc-x', title: 'X (Twitter) One-Liner / Mini-Thread', desc: 'Sharp, memorable mirror thought built for reposts.', isSlideDeck: false },
       { id: 'Telegram / WhatsApp Channel Note', platform: 'X & Channel', icon: '#soc-channel', title: 'Telegram / WA Channel Note', desc: 'Intimate voice-note-style text for your closest circle.', isSlideDeck: false },
-
-      // SELLING
       { id: 'Soft-selling content', platform: 'Selling', icon: '#svg-heart', title: 'Soft-Selling Story', desc: 'Empathy → Mirror moment → Gentle, non-pushy recommendation.', isSlideDeck: false },
       { id: 'Hard-selling content', platform: 'Selling', icon: '#svg-sparkle', title: 'Hard-Selling Promo', desc: 'Direct, persuasive Manglish offer without sounding robotic.', isSlideDeck: false }
     ];
 
     /**
-     * 2. DATA STORAGE SERVICE (localStorage Phase 1, structured for future Firestore migration)
+     * 2. DATA STORAGE SERVICE (localStorage Phase 1)
      */
     const StorageService = {
       STORAGE_KEY: 'mirror_content_studio_v2',
@@ -2051,21 +2194,19 @@ Restrictions: Zero profanity, vulgar expressions, or carutan. Never fabricate pe
     };
 
     /**
-     * 4. MAIN APPLICATION CONTROLLER (UI, Navigation, State & Event Handlers)
+     * 4. MAIN APPLICATION CONTROLLER
      */
     const App = {
       state: null,
       currentView: 'home',
       inspirationIndex: 0,
 
-      // Active Idea Dump Editor State
       activeIdeaId: null,
       ideaDirty: false,
       autosaveTimer: null,
       activeAnalysis: null,
       selectedAnalysisAngle: null,
 
-      // Active Create Studio State
       activeContentId: null,
       activeSourceIdeaId: null,
       currentSections: null,
@@ -2073,11 +2214,11 @@ Restrictions: Zero profanity, vulgar expressions, or carutan. Never fabricate pe
       isCarouselMode: false,
       activePlatformFilter: 'All',
 
-      // Active Library Filter Tab
       libraryTab: 'all',
 
       init() {
         this.state = StorageService.load();
+        this.updateFaviconDataUri();
         this.bindGlobalListeners();
         this.renderHeaderAndSettings();
         this.renderHome();
@@ -2086,6 +2227,23 @@ Restrictions: Zero profanity, vulgar expressions, or carutan. Never fabricate pe
         this.renderFormatPicker();
         this.renderLibrary();
         this.navigate('home', null, true);
+      },
+
+      updateFaviconDataUri() {
+        const pngDataUrl = IconGenerator.generate512PngDataUrl();
+        const favIcon = document.getElementById('favicon-link');
+        if (favIcon) favIcon.setAttribute('href', pngDataUrl);
+      },
+
+      downloadHomeScreenIconPng() {
+        const pngDataUrl = IconGenerator.generate512PngDataUrl();
+        const a = document.createElement('a');
+        a.href = pngDataUrl;
+        a.download = 'apple-touch-icon.png';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        this.showToast('Downloaded apple-touch-icon.png!');
       },
 
       bindGlobalListeners() {
@@ -2120,9 +2278,6 @@ Restrictions: Zero profanity, vulgar expressions, or carutan. Never fabricate pe
         });
       },
 
-      /* ======================================================================
-         NAVIGATION WITH UNSAVED CONTENT GUARD
-         ====================================================================== */
       navigate(targetView, subParam = null, skipGuard = false) {
         if (!skipGuard && this.currentView === 'ideas' && targetView !== 'ideas' && this.ideaDirty) {
           const rawVal = document.getElementById('idea-raw-input').value.trim();
@@ -2189,9 +2344,6 @@ Restrictions: Zero profanity, vulgar expressions, or carutan. Never fabricate pe
         window.scrollTo({ top: 0, behavior: 'smooth' });
       },
 
-      /* ======================================================================
-         HOME DASHBOARD RENDERING
-         ====================================================================== */
       getMalaysianGreeting() {
         const now = new Date();
         let hour = now.getHours();
@@ -2394,9 +2546,6 @@ Restrictions: Zero profanity, vulgar expressions, or carutan. Never fabricate pe
         });
       },
 
-      /* ======================================================================
-         IDEA DUMP & AI MIRROR ANALYSIS WORKFLOW
-         ====================================================================== */
       startNewIdea() {
         this.navigate('ideas');
         this.resetIdeaEditor(false);
@@ -2766,9 +2915,6 @@ Restrictions: Zero profanity, vulgar expressions, or carutan. Never fabricate pe
         }).join('');
       },
 
-      /* ======================================================================
-         MIRROR CONTENT GENERATOR & CAROUSEL BUILDER
-         ====================================================================== */
       populateCreateSourceDropdown(preselectId = '') {
         const select = document.getElementById('create-source-select');
         if (!select) return;
@@ -3255,9 +3401,6 @@ Restrictions: Zero profanity, vulgar expressions, or carutan. Never fabricate pe
         this.updateOutputStats();
       },
 
-      /* ======================================================================
-         MY CONTENT LIBRARY
-         ====================================================================== */
       setLibraryTab(tabName) {
         this.libraryTab = tabName;
         this.renderLibrary();
@@ -3459,9 +3602,6 @@ Restrictions: Zero profanity, vulgar expressions, or carutan. Never fabricate pe
         });
       },
 
-      /* ======================================================================
-         SETTINGS, VOICE EDITOR & DATA BACKUPS
-         ====================================================================== */
       renderHeaderAndSettings() {
         const hasRemote = Boolean(this.state.settings.aiEndpointUrl && this.state.settings.aiEndpointUrl.trim());
         const badgeEl = document.getElementById('header-ai-label');
@@ -3481,6 +3621,11 @@ Restrictions: Zero profanity, vulgar expressions, or carutan. Never fabricate pe
         document.getElementById('settings-default-length').value = this.state.settings.defaultLength || 'Medium';
         document.getElementById('settings-voice-instructions').value = this.state.settings.voiceInstructions || DEFAULT_VOICE_INSTRUCTIONS;
         document.getElementById('settings-ai-endpoint').value = this.state.settings.aiEndpointUrl || '';
+
+        const iconPreview = document.getElementById('settings-homescreen-icon-preview');
+        if (iconPreview) {
+          iconPreview.src = IconGenerator.generate512PngDataUrl();
+        }
 
         const activeAv = this.getActiveAvatar();
         const activeBadge = document.getElementById('settings-active-avatar-badge');
@@ -3526,9 +3671,10 @@ Restrictions: Zero profanity, vulgar expressions, or carutan. Never fabricate pe
         this.state.settings.aiEndpointUrl = document.getElementById('settings-ai-endpoint').value.trim();
 
         StorageService.save(this.state);
+        this.renderSettingsForm();
         this.renderHeaderAndSettings();
         this.renderHome();
-        this.showToast('Profile & Manglish voice settings saved!');
+        this.showToast('Profile & voice settings saved!');
       },
 
       resetVoiceInstructions() {
@@ -3615,9 +3761,6 @@ Restrictions: Zero profanity, vulgar expressions, or carutan. Never fabricate pe
         });
       },
 
-      /* ======================================================================
-         UTILITIES: CLIPBOARD (document.execCommand), MODALS, TOASTS, ESCAPING
-         ====================================================================== */
       copyToClipboard(text, successMsg = 'Copied!') {
         const helper = document.createElement('textarea');
         helper.value = text;
@@ -3725,7 +3868,6 @@ Restrictions: Zero profanity, vulgar expressions, or carutan. Never fabricate pe
       }
     };
 
-    // Start application once DOM is ready
     window.addEventListener('DOMContentLoaded', () => {
       App.init();
     });
